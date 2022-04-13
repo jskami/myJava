@@ -1,0 +1,11 @@
+package array;
+
+public class StudentArrayListTest {
+
+	public static void main(String[] args) {
+		// 학생 arrayList 연습 225p
+		ArrayList<Student> manage = new ArrayList<Student>();
+
+	}
+
+}

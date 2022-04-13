@@ -1,0 +1,11 @@
+package data_structure;
+
+public class InsertionSort {
+	
+	public static void InsertionSort(int[] arr) {
+		for (int i = 1; i < arr.length; i++) {
+			
+		}
+	}
+	
+}

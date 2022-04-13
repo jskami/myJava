@@ -1,0 +1,28 @@
+package array;
+
+public class Student {
+	// 객체 배열 연습하기 211p
+	
+	private String stuName;
+	private int stuNum;
+	
+	public Student() {
+		
+	}
+	
+	public Student(String stuName, int stuNum) {
+		this.stuName = stuName;
+		this.stuNum = stuNum;
+	}
+	
+	public String getstuName() {
+		return stuName;
+	}
+	
+	public void setstuName(String stuName) {
+		this.stuName = stuName;
+	}
+	
+	
+	
+}

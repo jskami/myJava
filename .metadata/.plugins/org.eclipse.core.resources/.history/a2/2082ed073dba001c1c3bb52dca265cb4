@@ -1,0 +1,19 @@
+package data_structure;
+
+public class Practice {
+
+	public static void main(String[] args) {
+
+		System.out.println("hello java!");
+		
+		void selectonSort(vector<int> v) {
+			for(int i = 0; i < v.size()-1; i++) {
+				int tmp = i;
+				for(int j=i+1; j<v.size();j++)
+			}
+			swap(v[i], v[tmp]);
+		}
+
+	}
+
+}

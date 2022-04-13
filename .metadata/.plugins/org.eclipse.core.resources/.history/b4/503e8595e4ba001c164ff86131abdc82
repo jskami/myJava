@@ -1,0 +1,15 @@
+package array;
+
+public class ObjectCopy {
+
+	public static void main(String[] args) {
+		// 객체 배열 복사 213p
+		
+		Book[] bookArray1 = new Book[3];
+		Book[] bookArray2 = new Book[3];
+		
+		System.out.println(bookArray1);
+
+	}
+
+}

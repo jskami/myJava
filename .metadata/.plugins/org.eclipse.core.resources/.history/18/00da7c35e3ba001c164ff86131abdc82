@@ -1,0 +1,11 @@
+package array;
+
+public class ArrayCopy {
+
+	public static void main(String[] args) {
+		// 배열 복사 System.arraycopy() 메서드 활용 212p
+		
+
+	}
+
+}

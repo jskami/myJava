@@ -1,0 +1,14 @@
+package array;
+
+public class StudentArray2 {
+
+	public static void main(String[] args) {
+		// 객체 배열 연습하기 211p
+		
+		Student[] manage = new Student[4];
+		
+		manage[0] = new Student("James", 1001);
+
+	}
+
+}

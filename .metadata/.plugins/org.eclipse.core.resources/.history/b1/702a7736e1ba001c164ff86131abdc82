@@ -1,0 +1,10 @@
+package array;
+
+public class StudentArray2 {
+
+	public static void main(String[] args) {
+		// 객체 배열 연습하기 211p
+
+	}
+
+}

@@ -1,0 +1,11 @@
+package data_structure;
+
+public class practice {
+
+	public static void main(String[] args) {
+		/* 선형 큐 - 배열 */
+		private final int MAX_SIZE = 5;
+
+	}
+
+}

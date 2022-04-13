@@ -1,0 +1,9 @@
+package data_structure;
+
+public class Practice {
+
+	private final int Max_size = 5;
+	int Queue;
+	int front, rear;
+	
+}

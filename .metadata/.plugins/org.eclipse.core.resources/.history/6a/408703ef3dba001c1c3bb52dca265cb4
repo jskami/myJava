@@ -1,0 +1,15 @@
+package data_structure;
+
+public class Practice {
+
+	public static void main(String[] args) {
+
+		final int length = arr.length;
+		for (int i = 0; i < length; i++) {
+			
+		}
+	
+
+	}
+
+}

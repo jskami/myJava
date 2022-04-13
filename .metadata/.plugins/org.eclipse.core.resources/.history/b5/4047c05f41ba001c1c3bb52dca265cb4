@@ -1,0 +1,32 @@
+package data_structure;
+
+public class Sort {
+
+	public static void bubbleSort(int[] arr) { // 버블정렬 
+
+		final int length = arr.length;
+		for (int i = 0; i < length; i++) {
+			for (int j = 0; j < length - 1; j++) {
+				if (j + 1 < length && arr[j] > arr[j + 1]) {
+					
+					arr[j] = arr[j] + arr[j + 1];
+					arr[j + 1] = arr[j] - arr[j +1];
+					arr[j] = arr[j] - arr[j + 1];
+				}
+			}
+			System.out.print(i + "번째 과정 ");
+			for (int x : arr)
+				System.out.print(x + " ");
+			System.out.println();
+		}
+	
+		
+	}
+	public static void main(String[] args) {
+		int[] arr = {8, 54, 99, 3, 2, 1, 0};
+		bubbleSort(arr);
+		for (int i : arr)
+			System.out.print(i + " ");
+	}
+
+}

@@ -1,0 +1,18 @@
+package array;
+import java.util.ArrayList;	// import 반드시 작성
+
+public class ArrayListTest {
+
+	public static void main(String[] args) {
+		// ArrayList 클래스 사용하기 224p
+		
+		// ArrayList 선언
+		ArrayList<Book> library = new ArrayList<Book>();
+		
+		library.add(new Book(""))
+		
+		
+
+	}
+
+}
