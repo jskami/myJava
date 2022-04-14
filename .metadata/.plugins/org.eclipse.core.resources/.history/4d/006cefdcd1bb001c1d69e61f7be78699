@@ -1,0 +1,13 @@
+package collection.arraylist;
+
+public class LinerList {
+
+	public static void main(String[] args) {
+		// 선형 리스트
+		
+		
+		
+
+	}
+
+}
