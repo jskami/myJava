@@ -1,0 +1,22 @@
+package collection.arraylist;
+import java.util.LinkedList;
+
+public class LinkedListTest {
+
+	public static void main(String[] args) {
+		LinkedList<String> List = new LinkedList<String>();
+		
+		List.add("Data A");
+		List.add("Data B");
+		List.add("Data C");
+		List.add("Data D");
+		
+		System.out.println(List);
+
+		List.add(1, "Data F");
+		System.out.println(List);
+		
+		List.addFirst("0");
+	}
+
+}

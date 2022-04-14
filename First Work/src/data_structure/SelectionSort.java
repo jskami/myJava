@@ -1,7 +1,7 @@
 package data_structure;
 
 public class SelectionSort {
-	/*=======================선택 정렬========================*/
+
 	public static void selectionSort (int[] arr) {
 		
 		final int length = arr.length;
@@ -31,7 +31,7 @@ public class SelectionSort {
 	
 	public static void main(String[] args) {
 		int[] arr = {8, 54, 99, 3, 2, 1, 0};
-		// bubbleSort
+		// bubbleSort(arr);
 		selectionSort(arr);
 		for (int i : arr)
 			System.out.print(i + " ");

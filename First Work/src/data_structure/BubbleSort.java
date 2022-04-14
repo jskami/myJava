@@ -1,7 +1,7 @@
 package data_structure;
 
 public class BubbleSort {
-	/*=======================버블 정렬========================*/
+
 	// [(n-1)-n]
 	public static void bubbleSort(int[] arr) {
 

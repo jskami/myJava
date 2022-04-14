@@ -1,0 +1,11 @@
+package array;
+
+public class Student1Test {
+
+	public static void main(String[] args) {
+		// 학생 성적 출력하기 229p
+		Student1 studentP = new Student(1001, "park");
+
+	}
+
+}

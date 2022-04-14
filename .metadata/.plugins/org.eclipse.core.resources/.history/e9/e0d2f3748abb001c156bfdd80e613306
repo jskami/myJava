@@ -1,0 +1,20 @@
+package data_structure;
+import java.util.Scanner;
+
+public class Algorithm2 {
+	
+	public static int medium(int num1, int num2, int num3) {
+		if(num1 <= num2)
+			if(num2 >= num3)
+				return num2;
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+}

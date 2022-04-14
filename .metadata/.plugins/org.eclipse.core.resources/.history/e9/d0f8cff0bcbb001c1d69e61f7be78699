@@ -1,0 +1,13 @@
+package collection.treeset;
+import java.util.TreeSet;
+
+public class TreeSetTest {
+	
+	public static void main(String[] args) {
+		// 간단한 트리셋 테스트 428p
+		TreeSet<String> treeSet = new TreeSet<String>();
+
+		
+	}
+
+}

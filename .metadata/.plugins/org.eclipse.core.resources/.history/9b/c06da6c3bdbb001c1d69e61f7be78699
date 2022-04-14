@@ -1,0 +1,17 @@
+package collection.treeset;
+
+public class Tree {
+	int count;
+	
+	public Tree() {
+		count = 0;
+	}
+	
+	public class Node {
+		Object data;
+		Node left;
+		Node right;
+	}
+	
+	
+}

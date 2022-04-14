@@ -1,0 +1,11 @@
+package array;
+
+public class Student1 {
+	// 배열 응용 Student 클래스 구현 227p
+	// 학생 성적 출력 프로그램 구현
+	
+	int stuID;
+	String stuName;
+	
+	
+}
