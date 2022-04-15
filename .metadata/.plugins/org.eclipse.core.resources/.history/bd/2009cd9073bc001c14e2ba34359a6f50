@@ -1,0 +1,14 @@
+package graph;
+import java.util.ArrayList;
+
+public class GraphLinkedList {
+	// 2.리스트 방식으로 구현하기 / 참고 : https://blog.naver.com/PostView.nhn?isHttpsRedirect=true&blogId=diddnjs02&logNo=222001183249
+	private ArrayList<ArrayList<Integer>> listGraph;
+	
+	public GraphLinkedList(int size) {
+		
+	}
+	
+	
+	
+}

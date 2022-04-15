@@ -1,0 +1,13 @@
+package graph;
+
+public class GraphArray {
+	// 1.인접행렬 방식으로 구현하기
+	private int[][] array;	// 2차원 배열 선언
+							// 0 : 서로 인접하지 않음(연결 x)
+							// 1 : 서로 인접함(연결 o)
+
+	public GraphArray(int size) {	//
+		array = new int[size+1][size+1]
+	}
+	
+}

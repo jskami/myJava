@@ -1,0 +1,19 @@
+package graph;
+
+public class GraphLinkedListTest {
+
+	public static void main(String[] args) {
+		
+		GraphLinkedList gl = new GraphLinkedList(5);
+		
+		// 정점 5개 추가
+		gl.addVertex(0);
+		gl.addVertex(1);
+		gl.addVertex(2);
+		gl.addVertex(3);
+		gl.addVertex(4);
+		
+
+	}
+
+}

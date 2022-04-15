@@ -1,0 +1,12 @@
+package collection.treeset;
+import collection.treeset.*;
+
+public class Run {
+
+	public static void main(String[] args) {
+		// 트리 생성
+		Tree tree = new Tree();
+
+	}
+
+}

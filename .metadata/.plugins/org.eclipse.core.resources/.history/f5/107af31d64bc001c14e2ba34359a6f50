@@ -1,0 +1,22 @@
+package graph;
+
+public class GraphArray {
+	// 1.인접행렬 방식으로 구현하기 / 참고 : https://blog.naver.com/PostView.nhn?isHttpsRedirect=true&blogId=diddnjs02&logNo=222001183249
+	private int[][] array;	// 2차원 배열 선언
+							// 0 : 서로 인접하지 않음(연결 x)
+							// 1 : 서로 인접함(연결 o)
+
+	public GraphArray(int size) {	// 행렬 그래프 생성
+		array = new int[size+1][size+1];	// 사용자가 선언하는 만큼의 크기와 딱 맞게([size]) 설정 + 정점의 숫자와 동일하게 index에 배치하고 싶다면 +1을 추가
+	}
+	
+	public int[][] getArray() {   // array를 가져오는 함수
+		return array;
+	}
+	
+	public boolean isEmpty() {
+		return array == null;
+	}
+	
+	
+}

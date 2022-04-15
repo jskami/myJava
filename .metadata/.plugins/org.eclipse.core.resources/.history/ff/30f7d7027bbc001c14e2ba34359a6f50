@@ -1,0 +1,25 @@
+package graph;
+
+public class GraphLinkedListTest {
+
+	public static void main(String[] args) {
+		
+		GraphLinkedList gl = new GraphLinkedList(5);
+		
+		// 정점 4개 추가
+		gl.addVertex(0);
+		gl.addVertex(1);
+		gl.addVertex(2);
+		gl.addVertex(3);
+		gl.addVertex(4);
+		
+		gl.addCompleteEdge(1, 2);
+		gl.addCompleteEdge(1, 4);
+		gl.addCompleteEdge(2, 3);
+		gl.addCompleteEdge(2, 4);
+		gl.addCompleteEdge(3, 4);
+
+		gl.printGraph();
+	}
+
+}

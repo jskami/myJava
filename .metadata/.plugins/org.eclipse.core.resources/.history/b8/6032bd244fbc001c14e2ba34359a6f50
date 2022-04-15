@@ -1,0 +1,13 @@
+package collection.treeset;
+import Tree.*;
+import TreeSetTest.Tree.Node;
+
+public class Run {
+
+	public static void main(String[] args) {
+		// 트리 생성
+		Tree tree = new Tree();
+
+	}
+
+}

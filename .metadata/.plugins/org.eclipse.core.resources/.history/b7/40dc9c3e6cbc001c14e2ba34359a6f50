@@ -1,0 +1,11 @@
+package graph;
+
+public class GraphArrayTest {
+
+	public static void main(String[] args) {
+		
+		GraphArray ga = new GraphArray();
+
+	}
+
+}

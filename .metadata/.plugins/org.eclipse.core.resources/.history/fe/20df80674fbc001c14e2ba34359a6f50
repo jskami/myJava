@@ -1,0 +1,17 @@
+package collection.treeset;
+import collection.treeset.*;
+import Tree.Tree.Node;
+
+public class Run {
+
+	public static void main(String[] args) {
+		// 트리 생성
+		Tree tree = new Tree();
+		
+		// 노드 생성
+		Node node1 = tree.addNode(1);
+		
+		
+	}
+
+}
