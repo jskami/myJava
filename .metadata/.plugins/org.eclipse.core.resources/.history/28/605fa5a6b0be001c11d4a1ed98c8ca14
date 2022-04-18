@@ -1,0 +1,29 @@
+package sort;
+
+public class HeapSort {
+	
+	// 부모 인덱스를 얻는 함수
+	private static int getParent(int child) {
+		return (child - 1) / 2;
+	}
+	
+	// 두 인덱스의 원소를 교환하는 함수
+	private static void swap(int[] a, int i, int j) {
+		int temp = a[i];
+		a[i] = a[j];
+		a[j] = temp;
+	}
+	
+	// 힙 만들기
+	private static void heapify(int[] a, int parentIdx, int lastIdx) {
+		/* 현재 트리에서 부모 노드의 자식 노드 인덱스를 각각 구한다.
+		 * 현재 부모 인덱스는 가장 큰 값을 갖고 있다고 가정한다.*/
+		int leftChildIdx = parentIdx *2 + 1;
+		int rightChildIdx = parentIdx *2 + 2;
+		int largestIdx = parentIdx;
+		
+	}
+	
+	
+	
+}
