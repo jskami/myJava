@@ -131,6 +131,7 @@ public class HeapSortConcept {
 	public static void main(String[] args) {
 		int[] a = {1, 4, 9, 10, 21, 42, 33, 15};
 		heapsort(a);
+		System.out.println("=====힙정렬=====");
 		System.out.print(Arrays.toString(a));
 	}
 	

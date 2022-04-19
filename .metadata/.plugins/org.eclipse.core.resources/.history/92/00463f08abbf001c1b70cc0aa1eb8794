@@ -1,0 +1,38 @@
+package search;
+
+import java.util.LinkedList;
+
+/* key값을 hash function을 통해 hashcode를 주고, 저장공간의 size로 나누어
+ * index를 정한 후 value값을 저장한다.
+ * =============================
+ * ! 서로 다른 key값이 하나의 index에 저장될 수도 있다 -> 해시충돌 */
+public class HashSearch {
+	class Node {
+		String key;
+		String value;
+		
+		public Node(String key, String value) {
+			this.key = key;
+			this.value = value;
+		}
+		String value() {
+			return value;
+		}
+		void value(String value) {
+			this.value = value;
+		}
+	}
+	
+	// Node형 연결리스트로 선언
+	LinkedList<Node>[] data;
+	
+	// 자신을 호출하면서 크기 지정, 선언
+	public hashSearch(int size) {
+		this.data = new LinkedList[size];
+		
+	}
+	
+	
+	
+	
+}

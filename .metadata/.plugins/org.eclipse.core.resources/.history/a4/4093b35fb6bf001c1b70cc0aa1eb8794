@@ -1,0 +1,11 @@
+package search;
+
+public class HashSearching {
+	private int[] arr = null;
+	private int size = 0;
+	
+	public HashSearching(int size) {
+		this.arr = new int[size];
+		this.size = size;
+	}
+}

@@ -1,0 +1,23 @@
+package search;
+
+public class HashSearching {
+	private int[] arr = null;
+	private int size = 0;
+	
+	public HashSearching(int size) {
+		this.arr = new int[size];
+		this.size = size;
+	}
+	
+	// 해시 탐색법 저장
+	public boolean set(int num) {
+		int idx = getEmptySpace(num);
+		if(idx < 0) {
+			return false;
+		}
+		this.arr[idx] = num;
+		return true;
+	}
+	
+	
+}

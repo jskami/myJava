@@ -16,7 +16,6 @@ public class TreeSetTest {
 		for (String str : treeSet) {
 			System.out.println(str);	// 정렬하여 출력될 것이다.(이진트리 사용)
 		}
-		
+	
 	}
-
 }

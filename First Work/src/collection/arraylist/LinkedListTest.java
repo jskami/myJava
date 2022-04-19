@@ -2,7 +2,7 @@ package collection.arraylist;
 import java.util.LinkedList;
 
 public class LinkedListTest {
-	// 링크드 리스트 테스트 416p
+	// LinkedList 테스트 416p
 	public static void main(String[] args) {
 		// LinkedList list = new LinkedList(); 선언은 내부 값 사용시 캐스팅이 필요하고, 잘못된 타입으로 캐스팅시 에러 발생 / 추천하지 않는 문법
 		LinkedList<String> List = new LinkedList<String>();

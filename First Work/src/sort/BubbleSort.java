@@ -20,9 +20,8 @@ public class BubbleSort {
 				System.out.print(x + " ");
 			System.out.println();
 		}
-	
-		
 	}
+	
 	public static void main(String[] args) {
 		int[] arr = {8, 54, 99, 3, 2, 1, 0};
 		bubbleSort(arr);

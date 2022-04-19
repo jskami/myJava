@@ -8,7 +8,7 @@ public class SequentialSearch {
 	public static void main(String[] args) {
 		
 		int[] a = {3, 2, 4, 5, 3, 2, 7, 6, 4};
-		boolean ans = contains(a, 10);
+		boolean ans = contains(a, 7);
 		if(ans) {
 			System.out.println("번호를 찾았습니다.");
 		} else {

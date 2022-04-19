@@ -1,0 +1,15 @@
+package search;
+
+public class BinaryTreeSearch {
+	
+	public int data;
+	public Node left;
+	public Node right;
+	
+	// 생성자
+	public Node(int data) {
+		this.data = data;
+		this.left = null;
+		this.right = null;
+	}
+}

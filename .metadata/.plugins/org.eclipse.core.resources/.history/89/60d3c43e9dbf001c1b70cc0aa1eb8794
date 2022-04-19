@@ -1,0 +1,57 @@
+package search;
+
+public class BinaryTreeSearch {
+	static class Node {
+		// 노드 클래스의 인스턴스 변수
+		public int data;
+		public Node left;
+		public Node right;
+		
+		// 생성자
+		public Node(int data) {
+			this.data = data;
+			this.left = null;
+			this.right = null;
+		}
+	}
+	
+	// 바이너리 트리 서치 클래스의 인스턴스 변수
+	public Node root;
+	
+	// root를 null로 초기화 하기 위한 생성자
+	public BinaryTreeSearch() {
+		this.root = null;
+	}
+	
+	// 주어진 트리를 확인하는 방법이 이진 트리인가 아닌가
+	public boolean isBSTOrNot() {
+		return isBSTOrNot(this.root, Integer.MIN_VALUE, Integer.MAX_VALUE);
+	}
+	
+	
+		isBSTOrNot(Node root, int minValue, int maxValue) {
+			root =  null;
+		if(root == null) {
+			return true;
+		}
+		
+		if (root.data >= minValue && root.data <= maxValue && isBSTOrNot(root.left, minValue, root.data) && isBSTOrNot(root.right, root.data, maxValue)) {
+			return true;
+		}
+		return false;
+	}
+	
+	public static void main(String[] args) {
+		
+		BinaryTreeSearch bts = new BinaryTreeSearch();
+		bts.root = new Node(100);
+		bts.root.left = new Node(90);
+		bts.root.right = new Node(110);
+		bts.root.left.left = new Node(80);
+		bts.root.left.right = new Node(95);
+		System.out.println(bts.isBSTOrNot());
+		
+	}
+	
+	
+}

@@ -1,42 +1,25 @@
 package search;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
-import java.util.Scanner;
-
-// 수정 필요-
+/* 선형 탐색
+ * 1. 배열 탐색
+ * 2. key 요소와 배열 요소 일치
+ * 3. key 요소가 발견되면 배열 요소의 index 위치 반환
+ * 4. key 요소를 찾을 수 없으면 -1 반환 
+ * */
 
 public class LinearSearch {
-	static int lSearch(int[] a, int n, int key) {
-		
-		int result = -1;
-		for(int i = 0; i < n; i++) {
-			if(a[i] == key) {
-				result = i;
+	public static int linearSearch(int[] arr, int key) {
+		for (int i = 0; i < arr.length; i++) {
+			if(arr[i] == key) {
+				return i;
 			}
 		}
-		return result;		
+		return -1;
 	}
 	
-	public static void main(String[] args) {
-		int[] a = {5, 3, 9, 2, 1, 8, 4, 6};
-		Scanner s = new Scanner(System.in);
-		System.out.print("요소 개수: ");
-		int num = s.nextInt();
-		int[] x= new int[num];
-
-		for(int i = 0; i < num; i++) {
-		System.out.print("x[" + i + "]: ");
-		x[i] = s.nextInt();
-		}
-
-		System.out.print("검색할 값: ");
-		int ky = s.nextInt();
-		int idx = lSearch(x, num, ky);
-
-		if(idx == -1)
-		System.out.println("그 값의 요소가 없습니다.");
-		else
-		System.out.println(ky + "은(는) x[" + idx + "]에 있습니다.");
-		}
+	public static void main(String a[]) {
+		int[] a1 = {10, 20, 30, 50, 70, 90};
+		int key = 50;
+		System.out.println(linearSearch(a1, key) + "번 인덱스에서 값 " + key + "을(를) 찾았습니다.");
 	}
+}

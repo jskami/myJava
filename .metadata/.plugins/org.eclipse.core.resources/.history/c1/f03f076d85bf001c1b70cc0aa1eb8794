@@ -1,0 +1,27 @@
+package search;
+
+
+/* 보간 탐색
+ * 이진 탐색과 다르게 탐색대상이 위치한 곳에 가까운 위치에서 탐색 개시*/
+public class InterpolationSearch {
+
+	int Isearch(int arr[], int first, int last, int target) {
+		if(first > last) {
+			return -1;
+		}
+		
+//		int mid = (first + last) / 2; // 이진 탐색에서의 기준점
+		
+		mid = ((double)(target - arr[first]) / (arr[last] - arr[first]) * (last - first)) + first;
+		if(arr[mid] == target) {
+			return mid;
+		} else if(target < arr[mid]) {
+			return Isearch(arr, first, mid -1, target);
+		} else {
+			return Isearch(arr, mid + 1, last, target);
+		}
+	}
+	
+	
+	
+}

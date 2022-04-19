@@ -31,7 +31,7 @@ public class HeapSort {
 		if(a[larger] > a[k]) {	// 부모노드 a[k]보다 자식노드의 값이 더 크다면 swap!
 			swap(a, larger, k);
 			heapify(a, larger, end); // swap 후 다시 자식노드와 그 아래 자식 노드들의 힙 교체
-		}
+		} 
 	}
 	
 	// 가장 큰 값인 루트노드부터 이진 트리에서 제거
