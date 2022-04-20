@@ -49,10 +49,5 @@ public class HeapSort {
 		heapSort(a);
 		System.out.printf("힙 정렬 : %s \n", (Arrays.toString(a)));
 	}
-
-	
 	
 }
-
-
-

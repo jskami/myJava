@@ -1,9 +1,0 @@
-package data_structure;
-
-public class InsertionSort {
-	
-	public static void InsertionSort(int[] arr) {
-		
-	}
-	
-}

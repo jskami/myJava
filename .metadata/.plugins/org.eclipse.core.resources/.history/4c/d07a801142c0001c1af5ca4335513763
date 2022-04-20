@@ -1,0 +1,35 @@
+package data_structure;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+
+public class Algorithm3 {
+	/* 알고리즘 예제 3 
+	 * 함수 solution은 정수 n을 매개변수로 입력받는다. n의 각 자릿수를 큰 수부터 작은 수 순으로
+	 * 정렬 후 새로운 정수를 리턴하라. (ex. n = 118372) */
+	public long solution(long n) {
+		long n = 118372;
+		long answer = 0;
+		String strResult = "";
+		String strn = String.valueOf(n); // n을 string객체로 반환
+		List<String> slist = Arrays.asList(strn.split(""));
+		List<Integer> ilist = new ArrayList<Integer>();
+		for(String s : slist) {
+			ilist.add(Integer.parseInt(s));
+		}
+		ilist.sort(new Comparator<Integer>() {
+			@Override
+			public int compare(Integer o1, Integer o2) {
+				return o2 - o1;
+			}
+		});
+		for(Integer i : ilist) {
+			strResult += String.valueOf(i);
+		}
+		answer = Long.parseLong(strResult);
+		return answer;
+	}
+
+}
