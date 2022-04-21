@@ -1,6 +1,0 @@
-package collection.arraylist;
-
-public class Queue {
-	private ArrayList<String> arrayQueue = new ArrayList<String>();
-	
-}

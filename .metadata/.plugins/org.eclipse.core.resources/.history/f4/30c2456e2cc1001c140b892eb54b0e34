@@ -1,0 +1,13 @@
+package sort;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class BucketSort2 {
+	// 버킷정렬 연습
+
+	public static void main(String[] args) {
+
+	}
+
+}
