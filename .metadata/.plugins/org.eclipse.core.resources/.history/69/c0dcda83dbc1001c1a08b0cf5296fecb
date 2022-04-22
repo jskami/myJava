@@ -1,0 +1,11 @@
+package array;
+
+public class AnimalTest1 {
+
+	public static void main(String[] args) {
+		// 다형성 테스트 259p
+		
+
+	}
+
+}

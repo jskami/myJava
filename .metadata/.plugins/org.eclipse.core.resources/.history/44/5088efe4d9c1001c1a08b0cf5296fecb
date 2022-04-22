@@ -1,0 +1,15 @@
+package array;
+
+public class OverridingTest3 {
+
+	public static void main(String[] args) {
+		// 클래스형에 기반하여 지불 금액 계산하기 257p
+		int price = 10000;
+		
+		Customer ctLee = new Customer(1001, "이씨");
+		System.out.println(ctLee.getctName() + " 님이 지불해야 할 금액은" + ctLee.calcPrice(price) + "원 입니다.");
+		
+
+	}
+
+}
