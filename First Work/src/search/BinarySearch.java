@@ -1,16 +1,17 @@
 package search;
 
 /* 이진탐색은 기본적으로 정렬된 자료구조 내에서 특정 값을 찾을때 둘로 나누어 탐색한다.
- * Divide conquer algorithm과 매우 유사하다.*/
+ * Divide conquer algorithm과 매우 유사하다.
+ * (참고 : https://minhamina.tistory.com/127) */
 
 public class BinarySearch {
 	static int[] arr = {1, 3, 5, 7, 8, 10, 20, 35, 99, 100};
 	
 	public static void main(String[] args) {
 		System.out.println("1. 순환 호출을 이용한 이진 탐색");
-		System.out.println(binarySearch1(5, 0, arr.length-1));
+		System.out.println(binarySearch1(7, 0, arr.length-1));
 		
-		System.out.println("\n2. 반복을 이용한 이진 탐색");
+		System.out.println("2. 반복을 이용한 이진 탐색");
 		System.out.println(binarySearch2(35, 0, arr.length-1));
 		
 	}

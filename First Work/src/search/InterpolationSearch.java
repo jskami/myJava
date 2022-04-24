@@ -3,7 +3,8 @@ package search;
 import java.util.Arrays;
 
 /* 보간 탐색
- * 이진 탐색과 다르게 탐색대상이 위치한 곳에 가까운 위치에서 탐색 개시*/
+ * 이진 탐색과 다르게 탐색대상이 위치한 곳에 가까운 위치에서 탐색 개시
+ * (참고 : https://banjjak1.tistory.com/53?category=978276) */
 public class InterpolationSearch {
 	public static int search(int[] arr, int start, int end, int target) throws Exception {
         // 찾고자하는 값의 인덱스

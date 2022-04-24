@@ -82,12 +82,12 @@ public class BinaryTreeSearch {
 	public static void main(String[] args) {
 		// 객체 생성
 		BinaryTreeSearch bts = new BinaryTreeSearch();
-//		bts.root = new Node(100);
-//		bts.root.left = new Node(90);
-//		bts.root.right = new Node(110);
-//		bts.root.left.left = new Node(80);
-//		bts.root.left.right = new Node(95);
-//		System.out.println(bts.isBSTOrNot());
+		bts.root = new Node(100);
+		bts.root.left = new Node(90);
+		bts.root.right = new Node(110);
+		bts.root.left.left = new Node(80);
+		bts.root.left.right = new Node(95);
+		System.out.println(bts.isBSTOrNot());
 		System.out.println("================");
 		
 		// 삽입 메서드 호출
