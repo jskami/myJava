@@ -1,6 +1,0 @@
-package graph;
-
-public class GraphArray {
-	// 1.인접행렬 방식으로 구현하기
-	private int[][] array;
-}

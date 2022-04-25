@@ -1,0 +1,97 @@
+package search;
+
+import java.util.LinkedList;
+
+class HashTable { 
+		class Node{ 
+		String key; 
+		String value; 
+		public Node(String key, String value){ 
+			this.key = key; 
+			this.value = value; 
+		} 
+		String value(){ 
+			return value; 
+		} 
+		void value(String value){ 
+			this.value=value; 
+		} 
+	} 
+		
+	// 해시테이블 
+	LinkedList<Node>[] data; HashTable(int size){ 
+		//배열방을 미리 만듦 
+		this.data = new LinkedList[size]; 
+		} 
+	
+	//해시함수 
+	int getHashCode(String key){ 
+		int hashcode=0; 
+		for(char c : key.toCharArray()){ 
+			hashcode+=c; 
+		} 
+		return hashcode; 
+	} 
+	
+	//index 
+	int convertToIndex(int hashcode){ 
+		return hashcode%data.length; 
+		} 
+	
+	//인덱스로 배열방을 찾은 이후, 배열방에 노드가 여러개 존재하는 경우, 검색 키를 가지고 해당 노드를 찾아오는 함수 
+	Node searchKey(LinkedList<Node> list, String key){ 
+		if(list==null) return null; 
+		for(Node node : list){ 
+			if(node.key.equals(key)){ 
+				return node; 
+				} 
+			} 
+		return null; 
+		} 
+	
+	//데이터를 받아 저장 
+	void put(String key, String value){ 
+		int hashcode = getHashCode(key); 
+		int index=convertToIndex(hashcode); 
+		System.out.println(key+", hashcode("+ hashcode +"), index("+index+")"); 
+		
+		//기존 배열방에 있는 것을 가져옴 
+		LinkedList<Node> list = data[index]; 
+		if(list==null){ 
+			list = new LinkedList<Node>(); 
+			data[index] = list; 
+			} 
+		
+		//기존에 해당 키로 데이터를 가지고 있는지 노드를 받아온다 
+		Node node = searchKey(list, key); 
+		if(node == null){ 
+			list.addLast(new Node(key, value)); 
+			} else{ 
+				node.value(value); 
+			} 
+		} 
+	
+	String get(String key){ 
+		int hashcode = getHashCode(key); 
+		int index = convertToIndex(hashcode); 
+		LinkedList<Node> list = data[index]; 
+		Node node = searchKey(list, key); 
+		return node == null? "Not found" : node.value(); 
+		} 
+	} 
+
+//public class Main{ 
+	public static void main (String[] args){ 
+	HashTable h = new HashTable(3); 
+	h.put("sung", "She is smart"); 
+	h.put("jin", "She is ambitious"); 
+	h.put("hee", "She is loud"); 
+	h.put("min", "She is strict"); 
+	h.put("min", "She is not strict"); 
+	
+	System.out.println(h.get("sung")); 
+	System.out.println(h.get("jin")); 
+	System.out.println(h.get("hee")); 
+	System.out.println(h.get("min")); 
+	} 
+//}

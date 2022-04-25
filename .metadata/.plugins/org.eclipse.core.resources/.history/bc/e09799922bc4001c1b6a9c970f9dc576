@@ -1,0 +1,97 @@
+package search;
+
+class HashTable {
+
+	 constructor(size) {
+		    this.data = new Array(size);
+		  }
+
+		  // Hash Function
+		  _hash(key) {
+		    let hash = 0;
+		      for(let i = 0; i < key.length; i++) {
+		        hash = (hash + key.charCodeAt(i) * i) % this.data.length;
+		      }
+
+		      return hash;
+		    }
+
+		  /**
+		  * Insert a key-pair value in object.
+		  * @param {key} key
+		  * @param {value} value
+		  * @return {object} this.data
+		  */
+		  set(key, value) {
+		    const address = this._hash(key);
+
+		    if(!this.data[address]) {
+		       this.data[address] = [];   
+		    }
+
+		    // If there is already a data in the address, push it in the same array.
+		    // This will happen in case of hash collision (enough data, less memory space).
+		    this.data[address].push([key, value]);    // Time complexity = O(1)
+		    return this.data;
+		  }
+
+		  /**
+		  * Look for a value at given key.
+		  * @param {key} key
+		  * @return {any} value
+		  */
+		  get(key) {
+		    const address = this._hash(key);
+		    const currentBucket = this.data[address];
+		    
+		    // In case of hash collision this will have length more than 1.
+		    if(currentBucket) {
+		      // Time Complexity = O(1) most often. In worst case (hash collision) it will be O(n)
+		      for(let i = 0; i < currentBucket.length; i++) {
+		        if(currentBucket[i][0] === key) {
+		          return currentBucket[i][1];
+		        }
+		      }
+		    }
+		  }
+
+		  /**
+		  * Find all keys in the object.
+		  * Time Complexity = O(N), 
+		  * in case of hash collision it will be O(N^2) where N is keys.
+		  * @return {object} keysArray
+		  */
+		  keys() {
+		    let keysArray = [];
+		    
+		    for(let i = 0; i < this.data.length; i++) {
+		      if(this.data[i] && this.data[i].length) {
+		        if (this.data[i].length > 1) {
+		          for(let j = 0; j < this.data[i].length; j++) {
+		            if (this.data[i][j]) {
+		              keysArray.push(this.data[i][j][0]);
+		            }
+		          }
+		        } else {
+		          keysArray.push(this.data[i][0][0]);
+		        }
+		      }
+		    }
+		    
+		    return keysArray;
+		  }
+}
+
+		const myHashTable = new HashTable(50);
+		myHashTable.set('has_garden', true);
+		console.log(myHashTable.get('has_garden'));        // true
+
+		myHashTable.set('house_number', 54);
+		console.log(myHashTable.get('house_number'));      // 54
+
+		myHashTable.set('street_name', 'Main Street');
+		console.log(myHashTable.get('street_name'));       // 'Main Street'
+
+		console.log(myHashTable.keys());    // [ 'has_garden', 'house_number', 'street_name' ]
+	
+}

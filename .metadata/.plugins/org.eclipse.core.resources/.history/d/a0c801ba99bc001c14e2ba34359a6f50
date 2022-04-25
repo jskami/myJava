@@ -1,8 +1,0 @@
-package sort;
-
-public class QuickSort {
-	static int partition(int[] array, int start, int end) {
-		int pivot = array[(start + end)/2];
-		
-	}
-}

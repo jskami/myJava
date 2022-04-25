@@ -1,0 +1,33 @@
+package sort;
+
+public class Insertion {
+    public static void sort(int[] arr) {
+        for (int end = 1; end < arr.length; end++) {
+            for (int i = end; i > 0; i--) {
+                if (arr[i - 1] > arr[i])
+                    swap(arr, i - 1, i);
+            }
+            
+         // 과정 출력
+         			System.out.println((i+1) + "번째 과정 : ");
+         			for (int x : arr)
+         				System.out.print(x + " ");
+         			System.out.println();
+        }
+    }
+
+    private static void swap(int[] arr, int a, int b) {
+        int tmp = arr[a];
+        arr[a] = arr[b];
+        arr[b] = tmp;
+    }
+    
+    public static void main(String[] args) {
+		int[] arr = {8, 54, 99, 3, 2, 1, 0};
+		// bubbleSort(arr);
+		sort(arr);
+		for (int i : arr)
+			System.out.print(i + " ");
+	}
+    
+}

@@ -29,7 +29,7 @@ public class QuickSort {
 	}
 	
 	public static void main(String[] args) {
-		int[] array = {4, 2, 3, 5, 9};
+		int[] array = {4, 2, 3, 5, 9, 17, 13, 11};
 		array = quickSort(array, 0, array.length - 1);
 		System.out.println(Arrays.toString(array));
 	}

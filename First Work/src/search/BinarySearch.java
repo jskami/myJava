@@ -11,7 +11,7 @@ public class BinarySearch {
 		System.out.println("1. 순환 호출을 이용한 이진 탐색");
 		System.out.println(binarySearch1(7, 0, arr.length-1));
 		
-		System.out.println("2. 반복을 이용한 이진 탐색");
+		System.out.println("\n2. 반복을 이용한 이진 탐색");
 		System.out.println(binarySearch2(35, 0, arr.length-1));
 		
 	}

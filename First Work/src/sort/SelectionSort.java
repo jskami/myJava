@@ -1,9 +1,7 @@
 package sort;
 
 public class SelectionSort {
-	
 	public static void selectionSort (int[] arr) {
-		
 		final int length = arr.length;
 		for (int i = 0; i < length; i++) {
 			int min = i;
@@ -36,6 +34,4 @@ public class SelectionSort {
 		for (int i : arr)
 			System.out.print(i + " ");
 	}
-	
-	
 }

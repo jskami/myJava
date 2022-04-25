@@ -60,10 +60,8 @@ public class InterpolationSearch {
 	            System.out.print(i + " ");
 	        }
 	        System.out.println();
-	        int search = InterpolationSearch.search(arr, 0, arr.length - 1, 7);
+	        int search = InterpolationSearch.search(arr, 0, arr.length - 1, 5);
 	        System.out.println("탐색완료 : " + search);
 	    }
-	
-	
-	
+
 }
