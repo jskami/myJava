@@ -1,6 +1,0 @@
-package search;
-
-public class HashSearching {
-	private int[] arr = null;
-	
-}

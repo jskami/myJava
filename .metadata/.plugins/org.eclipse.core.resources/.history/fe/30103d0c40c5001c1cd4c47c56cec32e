@@ -1,14 +1,11 @@
 package sort;
 
-import javax.swing.text.StyledEditorKit.ForegroundAction;
-
 public class SelectionSort {
 	public static void selectionSort (int[] arr) {
 		final int length = arr.length;
 		for (int i = 0; i < length; i++) {
 			int min = i;
-			
-			// 최소값을 가지고 있는 인덱스 찾기
+
 			for (int j = i + 1; j < length; j++) {
 				if (arr[j] < arr[min]) {
 					min = j;

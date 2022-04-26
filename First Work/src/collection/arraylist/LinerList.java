@@ -3,7 +3,7 @@ package collection.arraylist;
 public class LinerList {
 
 	public static void main(String[] args) {
-		// 선형 리스트
+		// 선형 리스트 (참고 : https://debugdaldal.tistory.com/8)
 		
 		// 1차원 배열의 순차표현
 		System.out.println("===1차원 배열의 순차표현===");

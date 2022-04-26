@@ -1,0 +1,13 @@
+package array;
+
+import java.util.Iterator;
+
+public class ForEx {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}
