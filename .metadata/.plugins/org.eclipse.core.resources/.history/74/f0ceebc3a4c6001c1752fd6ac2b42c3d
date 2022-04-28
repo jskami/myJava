@@ -1,0 +1,14 @@
+package myProgram;
+
+public class Grade_3 {
+
+	public static void main(String[] args) {
+		int[] stId = {1,2,3};
+		int[] kor = {98, 76, 85};
+		int[] eng = {90, 55, 70};
+		int[] total = new int[3];
+		int[] avg = new int[3];
+
+	}
+
+}

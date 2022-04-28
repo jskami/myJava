@@ -1,0 +1,25 @@
+package myProgram;
+
+public class Grade_1 {
+
+	public static void main(String[] args) {
+		
+		int stId = 1;
+		String stName = "홍길동";
+		int kor = 80;
+		int eng = 80;
+		int mat = 85;
+		int total = kor + eng + mat;
+		int avg = ((int) kor + eng + mat)/3;
+		char rank = 'B';
+		
+		
+		System.out.println("==================== 성적표 ===================");
+		System.out.println("  학번 \t 학생 \t 총점 \t 평균 \t 학점");
+		System.out.println("---------------------------------------------");
+		System.out.println("   1 \t 홍길동 \t 245 \t 80 \t  B ");
+		System.out.println(stId + stName + total + avg + rank);
+		
+	}
+
+}
