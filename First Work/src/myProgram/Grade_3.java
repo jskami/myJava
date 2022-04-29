@@ -6,32 +6,50 @@ import java.util.PriorityQueue;
 public class Grade_3 {
 
 	public static void main(String[] args) {
-		int[] stId = { 1, 2, 3 };
-		int[] kor = { 80, 62, 90 };
-		int[] eng = { 75, 60, 70 };
-		int[] mat = { 66, 70, 95 };
-		int[] total = new int[3];
-		int[] avg = new int[3];
-		char[] point = new char[3];
-		int[] rank = new int[3];
-	
+		int[] stId = { 1, 2, 3 };	// 학생 
+		int[] kor = { 80, 62, 90 };	// 국어
+		int[] eng = { 75, 70, 70 };	// 영어
+		int[] mat = { 66, 70, 95 };	// 수학
+		int[] total = new int[3]; 	// 총점
+		int[] avg = new int[3];		// 평균
+		char[] point = new char[3];	// 학점
+		int[] rank = new int[3];	// 등수
+		int count;
+		
 		// 학점 채점
-		for (int i = 0; i < stId.length; i++) {
-			total[i] = kor[i] + eng[i] + mat[i];
-			avg[i] = total[i] / kor.length;
-			if (avg[i] >= 90) {
-				point[i] = 'A';
-			} else if (avg[i] >= 80) {
-				point[i] = 'B';
-			} else if (avg[i] >= 70) {
-				point[i] = 'C';
-			} else if (avg[i] >= 60) {
-				point[i] = 'D';
-			} else {
-				point[i] = 'F';
-			}
+		for(int i = 0; i < stId.length; i++) {
+//			count = 1;
 			rank[i] = 1;
+			for(int j = 0; j < stId.length; j++) {
+				total[i] = kor[i] + eng[i] + mat[i];
+				avg[i] = total[i] / kor.length;
+				if (avg[i] >= 90) {
+					point[i] = 'A';
+				} else if (avg[i] >= 80) {
+					point[i] = 'B';
+				} else if (avg[i] >= 70) {
+					point[i] = 'C';
+				} else if (avg[i] >= 60) {
+					point[i] = 'D';
+				} else {
+					point[i] = 'F';
+				}
+				if(total[i] < total[j]) {
+					rank[i] = rank[i] + 1;
+				}
+			}	
+//			rank[i] = count;
 		}
+		
+		// 배열 순위 알고리즘
+//		for(int i = 0; i < stId.length; i++) {
+//			rank[i] = 1;
+//			for(int j = 0; j < stId.length; j++) {
+//				if(stId[i] < stId[j]) {
+//					rank[i] = rank[i]+1;
+//				}
+//			}
+//		}
 		
 		
 		// 등수 계산
@@ -111,3 +129,4 @@ public class Grade_3 {
 		
 	}		
 }
+

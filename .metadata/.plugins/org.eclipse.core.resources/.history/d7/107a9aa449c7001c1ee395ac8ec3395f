@@ -1,0 +1,15 @@
+package array;
+
+public class OOP_Ex1 {
+	int x = 5;
+	
+	String mesege = "너무 피곤해";
+	
+	public static void main(String[] args) {
+		OOP_Ex1 myobj = new OOP_Ex1();
+		System.out.println(myobj.x);
+		
+		OOP_Ex1 mesege = new OOP_Ex1();
+		System.out.println(mesege.mesege);
+	}
+}

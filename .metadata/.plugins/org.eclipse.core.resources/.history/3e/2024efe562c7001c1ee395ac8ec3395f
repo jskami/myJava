@@ -1,0 +1,12 @@
+package individual_practice;
+
+public class Final_Ex {
+	final int x = 10;
+	final double Pi = 3.14;
+	
+	public static void main(String[] args) {
+		Final_Ex obj = new Final_Ex();
+		obj.x = 50;
+		
+	}
+}

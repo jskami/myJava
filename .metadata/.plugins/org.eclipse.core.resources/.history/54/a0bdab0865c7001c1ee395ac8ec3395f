@@ -1,0 +1,22 @@
+package individual_practice;
+
+abstract class Abstract_Ex {
+	String call;
+	String sns;
+	String search;
+	String game;
+	String etc;
+	
+	// 일반 메서드
+	public void purpose() {
+		System.out.println("사용목적 : " + call);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+}

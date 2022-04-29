@@ -1,0 +1,9 @@
+package array;
+
+public class TestClass {
+
+	public TestClass() {
+		// 이게 디폴트 생성자
+	}
+
+}

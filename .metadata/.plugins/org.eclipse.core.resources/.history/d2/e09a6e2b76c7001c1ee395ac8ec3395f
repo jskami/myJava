@@ -1,0 +1,8 @@
+package individual_practice;
+
+class Na extends MyFriends {
+	public void addInfo() {
+		
+	}
+
+}

@@ -1,0 +1,26 @@
+package array;
+
+public class OOP_Ex4 {
+	// public , static, 생성자 연습
+	
+	int a = 20;
+	int b = 30;
+	
+	public OOP_Ex4() {
+		
+	}
+	
+	public OOP_Ex4(int num1, int num2) {
+		a = 5;
+		b = 2;
+	}
+	
+	public void sum() {
+		System.out.println("합계 : " + (a + b));
+	}
+	
+	public static void main(String[] args) {
+		
+	}
+	
+}

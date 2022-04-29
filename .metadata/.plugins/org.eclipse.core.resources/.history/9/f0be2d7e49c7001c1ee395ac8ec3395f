@@ -1,0 +1,10 @@
+package array;
+
+public class OOP_Ex1 {
+	int x = 5;
+	
+	public static void main(String[] args) {
+		OOP_Ex1 myobj = new OOP_Ex1();
+		System.out.println(myobj.x);
+	}
+}
