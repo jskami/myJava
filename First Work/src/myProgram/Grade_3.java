@@ -9,17 +9,15 @@ public class Grade_3 {
 		int[] stId = { 1, 2, 3 };	// 학생 
 		int[] kor = { 80, 62, 90 };	// 국어
 		int[] eng = { 75, 70, 70 };	// 영어
-		int[] mat = { 66, 70, 95 };	// 수학
+		int[] mat = { 66, 55, 95 };	// 수학
 		int[] total = new int[3]; 	// 총점
 		int[] avg = new int[3];		// 평균
 		char[] point = new char[3];	// 학점
-		int[] rank = new int[3];	// 등수
-		int count;
+		int[] rank = new int[3];	// 등수		
 		
 		// 학점 채점
 		for(int i = 0; i < stId.length; i++) {
-//			count = 1;
-			rank[i] = 1;
+			rank[i] = 1;	// 등수 배열을 for 돌때마다 1등으로 초기화
 			for(int j = 0; j < stId.length; j++) {
 				total[i] = kor[i] + eng[i] + mat[i];
 				avg[i] = total[i] / kor.length;
@@ -34,23 +32,13 @@ public class Grade_3 {
 				} else {
 					point[i] = 'F';
 				}
-				if(total[i] < total[j]) {
-					rank[i] = rank[i] + 1;
+				if(avg[i] < avg[j]) {
+					rank[i] = rank[i]+1;
+				} else if(avg[i] > avg[j]) {
+					rank[j] = rank[j]+1;
 				}
 			}	
-//			rank[i] = count;
 		}
-		
-		// 배열 순위 알고리즘
-//		for(int i = 0; i < stId.length; i++) {
-//			rank[i] = 1;
-//			for(int j = 0; j < stId.length; j++) {
-//				if(stId[i] < stId[j]) {
-//					rank[i] = rank[i]+1;
-//				}
-//			}
-//		}
-		
 		
 		// 등수 계산
 //		for(int i = 0; i < stId.length; i++) {
@@ -115,14 +103,14 @@ public class Grade_3 {
 //		PriorityQueue<Integer> heap = new PriorityQueue<Integer>(Collections.reverseOrder());
 //		
 //		for(int i = 0; i < avg.length; i++) {
-//			heap.add(avg[i]);
+//			heap.add(avg[i]);	// add() : 맨 뒤에 값 삽입
 //		}
 //		
 //		for(int i = 0; i < avg.length; i++) {
-//			avg[i] = heap.poll();
+//			avg[i] = heap.poll();	// poll() : 맨 앞의 값 반환 후 삭제
 //		}
 //		
-//		System.out.print("\n 우선순위가 높은 원소 순서로 뽑아낸 결과(1등, 2등, 3등) :");
+//		System.out.print("\n 우선순위가 높은 원소 순서로 뽑아낸 결과(1등, 2등, 3등) : ");
 //		for(int val : avg) {
 //			System.out.print(val + ", ");
 //		}
