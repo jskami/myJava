@@ -3,6 +3,7 @@ package myProgram;
 import java.util.Collections;
 import java.util.PriorityQueue;
 
+//22.04.28 간단한 성적계산 구현 
 public class Grade_3 {
 
 	public static void main(String[] args) {
