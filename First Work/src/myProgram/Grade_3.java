@@ -16,29 +16,75 @@ public class Grade_3 {
 		int[] rank = new int[3];	// 등수		
 		
 		// 학점 채점
+//		for(int i = 0; i < stId.length; i++) {
+//			total[i] = kor[i] + eng[i] + mat[i];
+//			avg[i] = total[i] / kor.length;
+//			if (avg[i] >= 90) {
+//				point[i] = 'A';
+//			} else if (avg[i] >= 80) {
+//				point[i] = 'B';
+//			} else if (avg[i] >= 70) {
+//				point[i] = 'C';
+//			} else if (avg[i] >= 60) {
+//				point[i] = 'D';
+//			} else {
+//				point[i] = 'F';
+//			}
+//			rank[i] = 1;
+//		}	
+
+		// try 1.
 		for(int i = 0; i < stId.length; i++) {
-			rank[i] = 1;	// 등수 배열을 for 돌때마다 1등으로 초기화
-			for(int j = 0; j < stId.length; j++) {
-				total[i] = kor[i] + eng[i] + mat[i];
-				avg[i] = total[i] / kor.length;
-				if (avg[i] >= 90) {
-					point[i] = 'A';
-				} else if (avg[i] >= 80) {
-					point[i] = 'B';
-				} else if (avg[i] >= 70) {
-					point[i] = 'C';
-				} else if (avg[i] >= 60) {
-					point[i] = 'D';
-				} else {
-					point[i] = 'F';
-				}
-				if(avg[i] < avg[j]) {
-					rank[i] = rank[i]+1;
-				} else if(avg[i] > avg[j]) {
-					rank[j] = rank[j]+1;
-				}
-			}	
+			total[i] = kor[i] + eng[i] + mat[i];
+			avg[i] = total[i] / kor.length;
+			rank[i] = 1;
+			for(int j = 0; j < i; j++)
+				if(total[i] < total[j])
+					rank[i]++;
+				else
+					rank[j]++;
 		}
+//		for(int i = 0; i < stId.length; i++) {
+//			total[i] = kor[i] + eng[i] + mat[i];
+//			avg[i] = total[i] / kor.length;
+//			if(avg[i] >= 90) {
+//				point[i] = 'A';
+//			} else if(avg[i] >= 80) {
+//				point[i] = 'B';
+//			} else if(avg[i] >= 70) {
+//				point[i] = 'C';
+//			} else if(avg[i] >= 60) {
+//				point[i] = 'D';
+//			} else {
+//				point[i] = 'F';
+//			}
+//		}
+		
+		// try 2.
+//		for(int i = 0; i < stId.length; i++) {
+//			rank[i] = 1;	// 등수 배열을 for 돌때마다 1등으로 초기화
+//			for(int j = 0; j < stId.length; j++) {
+//				total[i] = kor[i] + eng[i] + mat[i];
+//				avg[i] = total[i] / kor.length;
+//				if (avg[i] >= 90) {
+//					point[i] = 'A';
+//				} else if (avg[i] >= 80) {
+//					point[i] = 'B';
+//				} else if (avg[i] >= 70) {
+//					point[i] = 'C';
+//				} else if (avg[i] >= 60) {
+//					point[i] = 'D';
+//				} else {
+//					point[i] = 'F';
+//				}
+//				if(avg[i] < avg[j]) {
+//					rank[i] = rank[i]+1;
+//				} else if(avg[i] > avg[j]) {
+//					rank[j] = rank[j]+1;
+//				}
+//			}	
+//		}
+				
 		
 		// 등수 계산
 //		for(int i = 0; i < stId.length; i++) {
