@@ -44,6 +44,14 @@ public class CalculatorDemo {
 		c5.setOprands(10, 20);
 		c5.run();
 		
+		// 예외 처리 학습
+		Calculator c6 = new Calculator();
+		c6.setOprands(10, 0);
+		c6.divide();
+		
+		Calculator c7 = new Calculator();
+		c7.setOprands(20, 5);	// 예외처리 조치 두 가지중 택, 1.setOprands의 두번째 인자값에 0이 들어오면 예외를 발생시킨다.
+		c7.divide();	// 2.메서드 divide를 실행할 때 right의 값이 0이라면 예외 발생
 		
 		
 	}

@@ -50,6 +50,49 @@ public class Calculator {
 		this.c = c;
 	}
 	
+	// 예외 처리 학습 =======================//
+	public void setOprandsEx(int a, int b) {
+		// 첫 번째 조치
+		if(b == 0) {
+			throw new IllegalArgumentException("두 번째 인자 값은 0이 될 수 없다.");
+		}
+		this.a = a;
+		this.b = b;
+	}
+	
+//	public void divide() {
+//		try {
+//			System.out.print("계산 결과는 : ");
+//			System.out.print(this.a / this.b);
+//			System.out.print(" 입니다.");
+//		} catch(Exception e) {	// Exception은 java.lang에 소속된 기본 클래스이다.
+//			System.out.println("오류 발생 : " + e.getMessage());
+//			System.out.println("\n\ne.getMessage()\n" + e.getMessage());
+//			System.out.println("\n\ne.toString()\n" + e.toString());
+//			System.out.println("\n\ne.printStackTrace()");
+//			e.printStackTrace();
+//		}
+//	}
+	
+	// 두 번째 조치
+	public void divide(){
+        if(this.b == 0){
+            throw new ArithmeticException("0으로 나누는 것은 허용되지 않습니다.");
+        }
+        try {
+            System.out.print("계산결과는 ");
+            System.out.print(this.a/this.b);
+            System.out.print(" 입니다.");
+        } catch(Exception e){
+            System.out.println("\n\ne.getMessage()\n"+e.getMessage());
+            System.out.println("\n\ne.toString()\n"+e.toString());
+            System.out.println("\n\ne.printStackTrace()");
+            e.printStackTrace();
+        }
+    }
+	
+	//====================================//
+	
 	public void sum() {
 //		System.out.println(this.a + this.b + base);
 //		System.out.println(this.a + this.b);

@@ -44,7 +44,13 @@ public class CalculatorDemo1 {
 		c5.sum();
 		c5.avg();
 		c5.multiplication();
-		c5.division();
+//		c5.division();
+		
+		System.out.println("===============");
+		A a = new A();
+		a.e(10, 0);
+		a.e(1, 0);
+		a.e(2, 1);
 		
 	}
 }
