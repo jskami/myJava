@@ -95,7 +95,7 @@ public class Calculator {
 	
 	public void sum() {
 //		System.out.println(this.a + this.b + base);
-//		System.out.println(this.a + this.b);
+		System.out.println(this.a + this.b);
 //		System.out.println(this.a + this.b + this.c);
 	}
 	

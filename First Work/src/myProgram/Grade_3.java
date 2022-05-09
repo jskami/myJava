@@ -45,6 +45,7 @@ public class Grade_3 {
 				else
 					rank[j]++;
 		}
+		
 //		for(int i = 0; i < stId.length; i++) {
 //			total[i] = kor[i] + eng[i] + mat[i];
 //			avg[i] = total[i] / kor.length;

@@ -1,7 +1,0 @@
-package individual_practice;
-
-abstract class Galaxy extends SmartPhone {
-	public void spec()	{
-		company = 
-	}
-}
