@@ -16,6 +16,11 @@ public class Student1Test {
 		st1.showStudentInfo();
 		System.out.println("=========");
 		st2.showStudentInfo();
+		
+		// toString()메서드로 이름,학번 출력하기
+		Student st = new Student("3학년", 10);
+		System.out.println(st); // Object 클래스의 toString
+		System.out.println(st.toString());	// Student 클래스의 toString
 	}
 
 }

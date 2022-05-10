@@ -42,4 +42,7 @@
     <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
     <fullyQualifiedTypeName name="java.io.IOException"/>
     <fullyQualifiedTypeName name="individual_practice.FRUIT"/>
+    <fullyQualifiedTypeName name="java.lang.reflect.Member"/>
+    <fullyQualifiedTypeName name="individual_practice.C"/>
+    <fullyQualifiedTypeName name="generic.CarInfo"/>
 </qualifiedTypeNameHistroy>

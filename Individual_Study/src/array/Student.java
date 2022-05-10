@@ -35,5 +35,9 @@ public class Student {
 		System.out.println(stuName + "은(는) 학번이 " + stuNum + "입니다.");
 	}
 	
+	// 357p toString()메서드로 재정의 하여 이름,학번 출력하기
+	public String toString() {
+		return stuNum + ", " + stuName;
+	}
 	
 }

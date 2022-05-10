@@ -1,4 +1,4 @@
-package individual_practice;
+package generic;
 
 public class GenericStudentInfo {
 	
